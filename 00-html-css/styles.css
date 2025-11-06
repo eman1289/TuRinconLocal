@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  /* ===== Colores Principales ===== */
+  --primary: #1d75ff;
+  /* Botón principal "Buscar" y CTA */
+  --primary-hover: #1663d6;
+  --primary-light: #e5f0ff;
+  /* Fondo suave azul (chips, tags, etc.) */
+  --primary-rgb: 29, 117, 255;
+
+  /* ===== Neutros (Tipografía y UI) ===== */
+  --text-primary: #0c111e;
+  /* Texto principal (casi negro azulado) */
+  --text-secondary: #475569;
+  /* Subtítulos o textos de apoyo */
+  --text-muted: #64748b;
+  /* Texto menos importante o muted */
+
+  /* ===== Fondos ===== */
+  --background: #f8fafc;
+  /* Fondo general de la web */
+  --background-alt: #ffffff;
+  /* Fondos para secciones blancas */
+  --card-bg: #ffffff;
+  /* Card de negocios destacados */
+  --section-bg: #eef5ff;
+  /* Sección azul muy suave del CTA */
+
+  /* ===== Bordes y Sombras ===== */
+  --border: #e2e8f0;
+  /* Bordes muy suaves */
+  --border-strong: #cbd5e1;
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+  /* ===== Inputs / UI ===== */
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --input-placeholder: #94a3b8;
+
+  /* ===== Radius y Spacing ===== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  /* Para botones redondos */
+
+  /* ===== Tipografía ===== */
+  --font-family: "Inter", system-ui, sans-serif;
+  --h1-size: 3rem;
+  --h2-size: 2rem;
+  --h3-size: 1.25rem;
+  --text-size: 1rem;
+  --small-text: 0.875rem;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  background-color: var(--background-alt);
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+
+}
