@@ -4,82 +4,236 @@
   box-sizing: border-box;
 }
 
-
 :root {
-  /* ===== Colores Principales ===== */
-  --primary: #1d75ff;
-  /* Botón principal "Buscar" y CTA */
-  --primary-hover: #1663d6;
-  --primary-light: #e5f0ff;
-  /* Fondo suave azul (chips, tags, etc.) */
-  --primary-rgb: 29, 117, 255;
+  /*  Colores principales */
+  --primary: #111314;
+  --primary-dark: #0a3d66;
+  --primary-light: #09f;
+  --primary-hover: #4a80b7;
+  --secondary-register: #fcfcfc;
 
-  /* ===== Neutros (Tipografía y UI) ===== */
-  --text-primary: #0c111e;
-  /* Texto principal (casi negro azulado) */
-  --text-secondary: #475569;
-  /* Subtítulos o textos de apoyo */
-  --text-muted: #64748b;
-  /* Texto menos importante o muted */
+  /* Fondo y tarjetas */
+  --background: #ffffff;
+  --card-bg: #1e293b;
+  --input-bg: #1e293b;
 
-  /* ===== Fondos ===== */
-  --background: #f8fafc;
-  /* Fondo general de la web */
-  --background-alt: #ffffff;
-  /* Fondos para secciones blancas */
-  --card-bg: #ffffff;
-  /* Card de negocios destacados */
-  --section-bg: #eef5ff;
-  /* Sección azul muy suave del CTA */
+  /* Texto */
+  --text-primary: #000000;
+  --text-secondary: #5f6061;
+  --text-terceiary: #ffffff;
+  --text-muted: #94a3b8;
 
-  /* ===== Bordes y Sombras ===== */
-  --border: #e2e8f0;
-  /* Bordes muy suaves */
-  --border-strong: #cbd5e1;
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 6px 18px rgba(0, 0, 0, 0.12);
+  /* Bordes y sombras */
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
 
-  /* ===== Inputs / UI ===== */
-  --input-bg: #ffffff;
-  --input-border: #cbd5e1;
-  --input-placeholder: #94a3b8;
+  /* Tipografía */
+  --font-family: "Inter", system-ui, sans-serif;
 
-  /* ===== Radius y Spacing ===== */
+  /* Espaciado y bordes */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-pill: 999px;
-  /* Para botones redondos */
 
-  /* ===== Tipografía ===== */
-  --font-family: "Inter", system-ui, sans-serif;
-  --h1-size: 3rem;
-  --h2-size: 2rem;
-  --h3-size: 1.25rem;
-  --text-size: 1rem;
-  --small-text: 0.875rem;
+  /* Extras */
+  --gradient: linear-gradient(135deg, #0d5ba8, #09f);
+  --overlay: rgba(0, 0, 0, 0.6);
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: system-ui;
+  background-color: var(--background);
+  color: var(--text-primary) min-height 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-wrap: balance;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary-light);
+  }
+}
+
+h1+p {
+  text-wrap: balance;
+  margin-bottom: 2rem
 }
 
 header {
   border-bottom: 1px solid var(--border);
-  background-color: var(--background-alt);
+  background: var(--background);
   padding: .5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+
+
+  }
 }
 
+nav {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
 
+  a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+    font-weight: 500;
 
-body {
-  font-family: sans-serif;
-  background-color: var(--background);
-  color: var(--text-primary);
-  min-width: 100vw;
+    &:hover,
+    &:focus {
+      color: var(--primary);
+      outline: none;
+    }
+  }
+}
+
+header div a.login {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #dbe9f6;
+  color: var(--primary-hover);
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  /* TODO */
+}
+
+header div a.register {
+  padding: 0.5rem 1.45rem;
+  border-radius: 2rem;
+  background-color: #4a80b7;
+  color: var(--secondary-register);
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  /* TODO */
+}
+
+.hero {
+  position: relative;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  line-height: 1.6;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  overflow: hidden;
+  color: var(--secondary-register);
+}
 
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ----- CONTENEDOR DEL FORMULARIO ----- */
+.hero form {
+  display: flex;
+  flex-direction: column;
+  /* para que el botón quede debajo */
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 42rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ----- CONTENEDOR DE LOS 3 CAMPOS EN UNA FILA ----- */
+.hero form .inputs-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+/* ----- ESTILO DE LOS INPUTS ----- */
+.input-icon {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow-sm);
+  flex: 1 1 240px;
+  min-width: 220px;
+}
+
+.input-icon svg {
+  margin-right: 0.5rem;
+  color: var(--text-muted);
+}
+
+.input-icon input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+  background: transparent;
+  color: var(--text-tertiary);
+}
+
+/* ----- BOTÓN DE BUSCAR ----- */
+button[type="submit"] {
+  background: var(--primary-hover);
+  color: var(--secondary-register);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 0.75rem 2.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: var(--primary-light);
+  transform: scale(1.03);
 }
