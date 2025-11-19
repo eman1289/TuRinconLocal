@@ -14,14 +14,14 @@
 
   /* Fondo y tarjetas */
   --background: #ffffff;
-  --card-bg: #1e293b;
+  --card-bg: #ffffff;
   --input-bg: #1e293b;
 
   /* Texto */
   --text-primary: #000000;
   --text-secondary: #5f6061;
   --text-terceiary: #ffffff;
-  --text-muted: #94a3b8;
+  --text-muted: #8B9094;
 
   /* Bordes y sombras */
   --border: rgba(255, 255, 255, 0.1);
@@ -96,26 +96,40 @@ header {
 
 
   }
-}
 
-nav {
-  align-items: center;
-  gap: 1rem;
-  display: flex;
+  nav {
+    align-items: center;
+    gap: 1rem;
+    display: flex;
 
-  a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    transition: color 0.2s;
-    font-weight: 500;
+    a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+      font-weight: 500;
 
-    &:hover,
-    &:focus {
-      color: var(--primary);
-      outline: none;
+      &:hover {
+        color: var(--primary);
+      }
+
+      &.is-active {
+        color: var(--primary-light);
+        pointer-events: none;
+      }
+
+      &:active {
+        transform: scale(0.90);
+      }
+
+      &:focus {
+        color: var(--primary);
+        outline: none;
+      }
     }
   }
 }
+
+
 
 header div a.login {
   padding: 0.5rem 1rem;
@@ -213,11 +227,11 @@ header div a.register {
   font-size: 1rem;
   width: 100%;
   background: transparent;
-  color: var(--text-tertiary);
+  color: var(--primary);
 }
 
 /* ----- BOTÓN DE BUSCAR ----- */
-button[type="submit"] {
+button {
   background: var(--primary-hover);
   color: var(--secondary-register);
   border: none;
@@ -233,7 +247,405 @@ button[type="submit"] {
   transition: background 0.3s, transform 0.2s;
 }
 
-button[type="submit"]:hover {
+button:hover {
   background: var(--primary-light);
   transform: scale(1.03);
+}
+
+.input-icon input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ----- SECTION 2: Negocios Destacados ----- */
+.destacados {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.destacados header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.destacados h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Flechas */
+.destacados .flechas {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+
+
+/* Tarjetas de Negocios */
+.negocios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.negocio {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.negocio:hover {
+  transform: translateY(-5px);
+}
+
+.negocio img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.negocio h3 {
+  font-size: 1.25rem;
+  color: #3995EC;
+  margin-bottom: 0.5rem;
+}
+
+.negocio p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.negocio .oferta {
+  font-weight: bold;
+  color: #D35400;
+}
+
+.negocio-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ----- section 3----- */
+.registro-negocio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #E0EAF6;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 4rem 2rem;
+}
+
+.registro-negocio header {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.registro-negocio h2 {
+  background: none !important;
+  background-color: transparent !important;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.registro-negocio p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.registro-negocio button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: var(--primary-hover);
+  color: var(--secondary-register);
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.registro-negocio button:hover {
+  background-color: var(--primary-light);
+  transform: scale(1.05);
+}
+
+/* ----- Grid de features seccion 4 ----- */
+main>section:nth-child(4) footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+
+main>section:nth-child(4) footer>header {
+  grid-column: 1 / -1;
+  /* ocupa toda la fila */
+  text-align: center;
+}
+
+main>section:nth-child(4) footer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+main>section:nth-child(4) article {
+  background-color: var(--card-bg);
+  font-size: 1.1rem;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 400px;
+}
+
+main>section:nth-child(4) article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+main>section:nth-child(4) article svg {
+  color: var(--primary-light);
+  background: #C9DDF5;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+/* ----- Pagina 2 Categorias----- */
+
+.resultados-categoria {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.resultados-categoria h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.buscador-filtros {
+  margin-bottom: 2rem;
+}
+
+.filtros-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filtros-form input,
+.filtros-form select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex: 1 1 200px;
+}
+
+.botones-filtro {
+  display: flex;
+  gap: 1rem;
+}
+
+.botones-filtro button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta-negocio {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.tarjeta-negocio img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.tarjeta-negocio .rating {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #ebd03a;
+}
+
+.rating-num {
+  color: var(--text-muted);
+  font-weight: normal;
+  margin-left: 0.25rem;
+}
+
+.tarjeta-negocio a {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  /* Usa tu color principal */
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-align: center;
+
+}
+
+.tarjeta-negocio a:hover {
+  background-color: #353232;
+  /* O un tono más oscuro del primario */
+}
+
+
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.paginacion a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  text-decoration: none;
+  color: var(--text-secondary);
+
+  &:hover {
+    background-color: #09f;
+  }
+
+  &:active {
+    transform: scale(0.90);
+  }
+
+  &.is-active {
+    background-color: #09f;
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+
+
+
+
+
+
+/* ----- FOOTER ----- */
+.footer {
+  background-color: #f8f9fb;
+  padding: 2.5rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #e3e6ea;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Links del menú */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #3995EC;
+}
+
+/* Redes sociales */
+.footer-social p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #555;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #3995EC;
+  transform: scale(1.15);
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
 }

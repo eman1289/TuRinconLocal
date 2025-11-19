@@ -26,9 +26,8 @@
       Local Hub
     </h1>
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Categorias</a>
-      <a href="#">Negocios</a>
+      <a class="is-active" href="index.html">Inicio</a>
+      <a href="Categorias.html">Categorias</a>
       <a href="#">Ofertas</a>
     </nav>
     <div>
@@ -101,35 +100,51 @@
       </form>
     </section>
 
-    <section>
+    <section class="destacados">
 
       <header>
-        <h2> Negocios Destacagos</h2>
+        <h2> Negocios Destacados</h2>
+        <div class="flechas">
+          <button>&larr;</button> <!-- Flecha izquierda -->
+          <button>&rarr;</button> <!-- Flecha derecha -->
+        </div>
       </header>
-      <div>
-        <button>&larr;</button> <!-- Flecha izquierda -->
-        <button>&rarr;</button> <!-- Flecha derecha -->
+
+
+
+      <div class="negocios-grid">
+
+        <article class="negocio">
+          <a href="https://www.goiti.com.mx/panaderia-reposteria" class="negocio-link">
+            <img src="./negocioPan.png" alt="Imagen de una panadería" width="200" />
+            <h3>Panadería/Repostería "Doña mari"</h3>
+            <p>Pan fresco y delicioso todos los días</p>
+            <p class="oferta">🎉 Oferta destacada: <strong>20% de descuento</strong> en tu primera compra</p>
+          </a>
+        </article>
+
+        <article class="negocio">
+          <a href="index.html" class="negocio-link">
+            <img src="./charro.png" alt="Imagen de un puesto de antojitos mexicanos" width="200" />
+            <h3>Puesto de Antojitos Mexicanos "El charro"</h3>
+            <p class="oferta">🎉 Oferta destacada: Menu del dia a precio especial.</p>
+          </a>
+        </article>
+
+        <article class="negocio">
+          <a href="index.html" class="negocio-link">
+            <img src="./barroNegro.png" alt="Local de Artesanías de Barro Negro" width="200" />
+            <h3>Tienda de Artesanías Barro Negro</h3>
+            <p class="oferta">🎉 Oferta destacada: Combo "Café Oaxaqueño": Un juego de 2 o 4 tazas de barro negro + una
+              bolsa de café local</p>
+          </a>
+        </article>
+
       </div>
-      <article class="negocio">
-        <image src="./negocioPan.png" alt="Imagen de una panadería" width="200" />
-        <h3>Panadería/Repostería "Doña mari"</h3>
-        <p>Pan fresco y delicioso todos los días</p>
-        <p class="oferta">🎉 Oferta destacada: <strong>20% de descuento</strong> en tu primera compra</p>
-      </article>
-      <article class="negocio">
-        <image src="./charro.png" alt="Imagen de un puesto de antojitos mexicanos" width="200" />
-        <h3>Puesto de Antojitos Mexicanos "El charro"</h3>
-        <p class="oferta">🎉 Oferta destacada: Menu del dia a precio especial.</p>
-      </article>
-      <article class="negocio">
-        <image src="./barroNegro.png" alt="Local de Artesanías de Barro Negro" width="200" />
-        <h3>Tienda de Artesanías Barro Negro</h3>
-        <p class="oferta">🎉 Oferta destacada: Combo "Café Oaxaqueño": Un juego de 2 o 4 tazas de barro negro + una
-          bolsa de café local</p>
-      </article>
+
     </section>
 
-    <section>
+    <section class="registro-negocio">
       <header>
         <h2>¿Tienes un negocio?</h2>
       </header>
@@ -190,49 +205,52 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
 
-    <nav>
-      <a href="#">Términos de Servicio</a>
-      <a href="#">Política de Privacidad</a>
-      <a href="#">Contacto</a>
-    </nav>
+    <div class="footer-container">
 
-    <p>&copy; 2025 Local Hub. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#">Acerca de Nosotros</a>
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Contacto</a>
+      </nav>
 
-    <div class="social">
-      <p>Síguenos en redes sociales:</p>
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook">
-          <!-- Ícono Facebook -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icon-tabler-brand-facebook">
-            <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7" />
-          </svg>
-        </a>
+      <p class="footer-copy">&copy; 2025 TuRinconLocal. Todos los derechos reservados.</p>
 
-        <a href="#" aria-label="Twitter">
-          <!-- Ícono Twitter -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-            class="icon icon-tabler icon-tabler-brand-twitter">
-            <path
-              d="M14.058 3.41c-1.807.767-2.995 2.453-3.056 4.38l-.002.182-.243-.023c-2.392-.269-4.498-1.512-5.944-3.531a1 1 0 0 0-1.685.092c-.719 1.485-1.19 3.29-1.017 5.203.283 2.263 1.5 4.215 3.779 5.679-1.315.663-2.518.952-3.827.9-1.056-.04-1.446 1.372-.518 1.878 3.598 1.961 7.461 2.566 10.792 1.6 4.06-1.18 7.152-4.223 8.335-8.433.238-.993.372-2.006.401-3.024l.393-.779.44-.862.214-.434.118-.247c.22-.593-.166-1.358-.941-1.358l-.122.007a.997.997 0 0 0-.231.057l-.086.038a7.46 7.46 0 0 1-.88.36l-.356.115-.271.08-.772.214c-1.336-1.118-3.144-1.254-5.012-.554l-.211.084z" />
-          </svg>
-        </a>
+      <div class="footer-social">
 
-        <a href="#" aria-label="Instagram">
-          <!-- Ícono Instagram -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icon-tabler-brand-instagram">
-            <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
-            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
-            <path d="M16.5 7.5v.01" />
-          </svg>
-        </a>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <!-- Ícono Facebook -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icon-tabler-brand-facebook">
+              <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Twitter">
+            <!-- Ícono Twitter -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="icon icon-tabler icon-tabler-brand-twitter">
+              <path
+                d="M14.058 3.41c-1.807.767-2.995 2.453-3.056 4.38l-.002.182-.243-.023c-2.392-.269-4.498-1.512-5.944-3.531a1 1 0 0 0-1.685.092c-.719 1.485-1.19 3.29-1.017 5.203.283 2.263 1.5 4.215 3.779 5.679-1.315.663-2.518.952-3.827.9-1.056-.04-1.446 1.372-.518 1.878 3.598 1.961 7.461 2.566 10.792 1.6 4.06-1.18 7.152-4.223 8.335-8.433.238-.993.372-2.006.401-3.024l.393-.779.44-.862.214-.434.118-.247c.22-.593-.166-1.358-.941-1.358l-.122.007a.997.997 0 0 0-.231.057l-.086.038a7.46 7.46 0 0 1-.88.36l-.356.115-.271.08-.772.214c-1.336-1.118-3.144-1.254-5.012-.554l-.211.084z" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <!-- Ícono Instagram -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icon-tabler-brand-instagram">
+              <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+              <path d="M16.5 7.5v.01" />
+            </svg>
+          </a>
+        </div>
       </div>
-
   </footer>
 
 </body>
