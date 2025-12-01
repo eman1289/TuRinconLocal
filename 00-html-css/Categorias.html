@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>TuRinconLocal - Negocios</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Listado de negocios locales
+  para encontrar lo mejor de tu localidad.">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="module" src="./script.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-building-store">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 21l18 0" />
+        <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+        <path d="M5 21l0 -10.15" />
+        <path d="M19 21l0 -10.15" />
+        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+      </svg>
+      Local Hub
+    </h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a class="is-active" href="#">Categorias</a>
+      <a href="#">Ofertas</a>
+    </nav>
+    <div>
+      <button>Plublicar mi negocio</button>
+    </div>
+  </header>
+
+  <main class="resultados-categoria">
+    <h2>Resultados para Restaurantes</h2>
+
+
+    <section class="buscador-filtros">
+      <form class="filtros-form">
+        <input type="text" placeholder="Buscar por nombre o palabra clave">
+        <select>
+          <option value="">Ubicación</option>
+          <option value="centro">Centro</option>
+          <option value="norte">Norte</option>
+          <option value="sur">Sur</option>
+        </select>
+        <input type="number" min="1" max="5" placeholder="Calificación mínima">
+        <div class="botones-filtro">
+          <button type="submit">Aplicar Filtros</button>
+          <button type="reset">Limpiar Filtros</button>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="tarjetas-grid">
+      <div class="tarjeta-negocio">
+        <img src="./Trarroria.png" alt="La Trattoria del Nonno" width="200px">
+        <h3>La Trattoria del Nonno</h3>
+        <p>Comida Italiana</p>
+        <span class="rating">
+          ★★★★☆ <span class="rating-num">4.5</span>
+        </span>
+
+        <a href="#" class="perfil">Ver Perfil</a>
+      </div>
+
+      <div class="tarjeta-negocio">
+        <img src="./sushi fusion.png" alt="La Trattoria del Nonno" width="200px">
+        <h3>Sushi Fusión</h3>
+        <p>Comida Japonesa</p>
+        <span class="rating">
+          ★★★★☆ <span class="rating-num">4.5</span>
+        </span>
+        <a id="boton-importante" href="#">Ver Perfil</a>
+      </div>
+      <div class="tarjeta-negocio">
+        <img src="./tacos el campeon.png" alt="La Trattoria del Nonno" width="200px">
+        <h3>Tacos el campeon</h3>
+        <p>Comida Mexicana</p>
+        <span class="rating">
+          ★★★★☆ <span class="rating-num">4.5</span>
+        </span>
+        <a href="#">Ver Perfil</a>
+      </div>
+      <div class="tarjeta-negocio">
+        <img src="./cafe aromas.png" alt="La Trattoria del Nonno" width="200px">
+        <h3>café Aromas</h3>
+        <p>Cafeteria</p>
+        <span class="rating">
+          ★★★★☆ <span class="rating-num">4.5</span>
+        </span>
+        <a href="#">Ver Perfil</a>
+      </div>
+      <div class="tarjeta-negocio">
+        <img src="./sabores de la india.png" alt="La Trattoria del Nonno" width="200px">
+        <h3>Sabores de la india</h3>
+        <p>Comida Hindú</p>
+        <span class="rating">
+          ★★★★☆ <span class="rating-num">4.5</span>
+        </span>
+        <a href="#">Ver Perfil</a>
+      </div>
+      <div class="tarjeta-negocio">
+        <img src="./parrilla don jose.png" alt="La Trattoria del Nonno" width="200px">
+        <h3>Parrilla don josé</h3>
+        <p>carne asada</p>
+        <span class="rating">
+          ★★★★☆ <span class="rating-num">4.5</span>
+        </span>
+        <a href="#">Ver Perfil</a>
+      </div>
+    </section>
+
+    <nav class="paginacion">
+      <a href="#">Anterior</a>
+      <a class="is-active" href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">Siguiente</a>
+    </nav>
+
+
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <nav class="footer-nav">
+        <a href="#">Acerca de Nosotros</a>
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Contacto</a>
+      </nav>
+
+      <p class="footer-copy">&copy; 2025 TuRinconLocal. Todos los derechos reservados.</p>
+
+      <div class="footer-social">
+
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <!-- Ícono Facebook -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icon-tabler-brand-facebook">
+              <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Twitter">
+            <!-- Ícono Twitter -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="icon icon-tabler icon-tabler-brand-twitter">
+              <path
+                d="M14.058 3.41c-1.807.767-2.995 2.453-3.056 4.38l-.002.182-.243-.023c-2.392-.269-4.498-1.512-5.944-3.531a1 1 0 0 0-1.685.092c-.719 1.485-1.19 3.29-1.017 5.203.283 2.263 1.5 4.215 3.779 5.679-1.315.663-2.518.952-3.827.9-1.056-.04-1.446 1.372-.518 1.878 3.598 1.961 7.461 2.566 10.792 1.6 4.06-1.18 7.152-4.223 8.335-8.433.238-.993.372-2.006.401-3.024l.393-.779.44-.862.214-.434.118-.247c.22-.593-.166-1.358-.941-1.358l-.122.007a.997.997 0 0 0-.231.057l-.086.038a7.46 7.46 0 0 1-.88.36l-.356.115-.271.08-.772.214c-1.336-1.118-3.144-1.254-5.012-.554l-.211.084z" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <!-- Ícono Instagram -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icon-tabler-brand-instagram">
+              <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+              <path d="M16.5 7.5v.01" />
+            </svg>
+          </a>
+        </div>
+      </div>
+  </footer>
+
+</body>
+
+
+</html>
