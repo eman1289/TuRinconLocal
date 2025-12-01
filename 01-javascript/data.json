@@ -1,0 +1,80 @@
+[
+  {
+    "id": "negocio-001",
+    "titulo": "La Trattoria del Nonno",
+    "descripcion": "Comida Italiana | en el centro de la ciudad",
+    "ubicacion_texto": "Centro Histórico",
+    "imagen": "./Trarroria.png",
+    "enlace": "./perfilnegocio.html",
+    "data": {
+      "modalidad": "italiana",
+      "ubicacion": "centro",
+      "calificacion": 3
+    }
+  },
+  {
+    "id": "negocio-002",
+    "titulo": "Sushi Fusión",
+    "descripcion": "Comida Japonesa | en el norte de la ciudad",
+    "ubicacion_texto": "Plaza Norte",
+    "imagen": "./sushi fusion.png",
+    "enlace": "#",
+    "data": {
+      "modalidad": "japonesa",
+      "ubicacion": "norte",
+      "calificacion": 4.8
+    }
+  },
+  {
+    "id": "negocio-003",
+    "titulo": "Tacos el Campeón",
+    "descripcion": "Comida Mexicana | en el sur de la ciudad",
+    "ubicacion_texto": "Barrio Sur",
+    "imagen": "./tacos el campeon.png",
+    "enlace": "#",
+    "data": {
+      "modalidad": "tacos",
+      "ubicacion": "sur",
+      "calificacion": 4.2
+    }
+  },
+  {
+    "id": "negocio-004",
+    "titulo": "Café Aromas",
+    "descripcion": "Cafetería de especialidad y postres",
+    "ubicacion_texto": "Av. Central",
+    "imagen": "./cafe aromas.png",
+    "enlace": "#",
+    "data": {
+      "modalidad": "cafeteria",
+      "ubicacion": "centro",
+      "calificacion": 4.0
+    }
+  },
+  {
+    "id": "negocio-005",
+    "titulo": "Sabores de la India",
+    "descripcion": "Comida Hindú tradicional",
+    "ubicacion_texto": "Zona Sur",
+    "imagen": "./sabores de la india.png",
+    "enlace": "#",
+    "data": {
+      "modalidad": "comida-india",
+      "ubicacion": "sur",
+      "calificacion": 4.3
+    }
+  },
+  {
+    "id": "negocio-006",
+    "titulo": "Parrilla Don José",
+    "descripcion": "La mejor carne asada al carbón",
+    "ubicacion_texto": "Salida Norte",
+    "imagen": "./parrilla don jose.png",
+    "enlace": "#",
+    "data": {
+      "modalidad": "carne-asada",
+      "ubicacion": "norte",
+      "calificacion": 5.0
+    }
+  }
+]

@@ -648,4 +648,755 @@ main>section:nth-child(4) article svg {
   font-size: 0.9rem;
   color: #666;
   margin-top: 0.5rem;
+<<<<<<< HEAD
+=======
+}
+
+/*pagina register */
+.pagina-registro {
+  box-sizing: border-box;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pagina-registro h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #0275d8;
+}
+
+.pagina-registro>p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.tabs-container {
+  display: flex;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.5rem;
+  border: none;
+  gap: 0;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  color: #666;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.tab-btn.active {
+  background-color: #fff;
+  color: #0275d8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+}
+
+
+
+.pagina-registro form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.pagina-registro form .form-group:not(.checkbox) label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.pagina-registro form input,
+.pagina-registro form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.pagina-registro form input:focus,
+.pagina-registro form select:focus {
+  border-color: #0275d8;
+  outline: none;
+}
+
+/* Checkbox alineado horizontalmente */
+.pagina-registro .checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.pagina-registro .checkbox label span {
+  line-height: 1.4;
+}
+
+.pagina-registro .checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0275d8;
+  margin: 0;
+}
+
+/* Botón */
+.pagina-registro form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagina-registro form button:hover {
+  background-color: #025aa5;
+}
+
+/* Enlace inferior */
+.pagina-registro .enlace-inferior {
+  text-align: center;
+  margin-top: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.pagina-registro a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.pagina-registro a:hover {
+  text-decoration: underline;
+}
+
+/* Mensajes de error */
+.pagina-registro .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/*pagina iniciar sesión*/
+
+.Isesion form {
+
+  box-sizing: border-box;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  background-color: #FFFFFF;
+  border: 1px solid #f1eeee;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.Isesion h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+
+
+}
+
+.Isesion>p {
+
+  color: var(--text-muted);
+  text-align: center;
+
+
+}
+
+.Isesion form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+
+.Isesion form input,
+.Isesion form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.Isesion form input:focus,
+.Isesion form select:focus {
+  border-color: #0275d8;
+  outline: none;
+}
+
+.Isesion form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Isesion form button:hover {
+  background-color: #025aa5;
+}
+
+.Isesion a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.Isesion .enlace-inferior {
+  text-align: center;
+
+}
+
+/*Botones de favoritos y carrito*/
+.iconos-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.favoritos,
+.carrito {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+
+.favoritos svg,
+.carrito svg {
+  width: 22px;
+  height: 22px;
+  stroke: #333;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+
+
+/* El corazón se pone rojo */
+.favoritos:hover {
+  background-color: #fff0f0;
+  border-color: #ffcccc;
+  transform: translateY(-2px);
+}
+
+.favoritos:hover svg {
+  stroke: #e63946;
+  fill: #e63946;
+}
+
+/* El carrito se pone azul (Tu color de marca) */
+.carrito:hover {
+  background-color: #f0f8ff;
+  border-color: #b3d7ff;
+  transform: translateY(-2px);
+}
+
+.carrito:hover svg {
+  stroke: #0275d8;
+}
+
+.carrito {
+  position: relative;
+  /* IMPORTANTE */
+  overflow: visible;
+  /* Para que el círculo rojo pueda salirse un poquito */
+}
+
+/* 2. Estilo del círculo rojo (Badge) */
+.contador {
+  position: absolute;
+  top: -5px;
+  /* Lo subimos un poco */
+  right: -5px;
+  /* Lo movemos a la derecha */
+  background-color: #ff3b30;
+  /* Rojo notificación */
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* Círculo perfecto */
+  display: flex;
+  /* Para centrar el número */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  /* Borde blanco para separarlo del icono */
+
+  /* Inicialmente oculto si es 0 (opcional, el JS lo manejará) */
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Efecto rebote */
+}
+
+/* 3. Clase para mostrar el contador */
+.contador.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 4. Animación de "Pop" cuando agregas algo */
+@keyframes pop-animacion {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  /* Crece */
+  100% {
+    transform: scale(1);
+  }
+
+  /* Vuelve a su tamaño */
+}
+
+/* Esta clase se agrega y se quita con JS */
+.animacion-activa {
+  animation: pop-animacion 0.3s ease;
+}
+
+/*Pagina ver perfil*/
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  color: #1c1e21;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* 2. ESTILO DE LAS TARJETAS (CARDS) */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  margin-bottom: 20px;
+  /* Espacio entre una tarjeta y otra */
+  overflow: hidden;
+  /* Para que nada se salga de los bordes redondeados */
+}
+
+/* Padding general para las tarjetas de contenido */
+.about-section,
+.offers-section,
+.gallery-section,
+.reviews-section,
+.location-section {
+  padding: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #050505;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* 3. LAYOUT PRINCIPAL (GRID DE 2 COLUMNAS) */
+.profile-grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+
+.profile-hero {
+  padding-bottom: 20px;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-info {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: -40px;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-color: white;
+}
+
+.business-details {
+  margin-left: 15px;
+  padding-top: 45px;
+}
+
+.badges span {
+  display: inline-block;
+  background-color: #e4e6eb;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #65676b;
+}
+
+.btn-follow {
+  background-color: #1877f2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  align-self: center;
+}
+
+.offer-item {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.offer-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* 7. FORMULARIO Y MAPA (COLUMNA DERECHA) */
+.right-column iframe {
+  width: 100%;
+  border-radius: 8px;
+  height: 200px;
+}
+
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 8. RESPONSIVE (CELULARES) */
+/* Cuando la pantalla sea menor a 768px (tablets y celulares), se vuelve 1 columna */
+@media (max-width: 768px) {
+  .profile-grid-layout {
+    grid-template-columns: 1fr;
+    /* Una sola columna */
+  }
+
+  .hero-info {
+    flex-direction: column;
+    align-items: center;
+    /* Todo centrado */
+    text-align: center;
+    margin-top: -65px;
+    /* Ajuste para celular */
+  }
+
+  .business-details {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .btn-follow {
+    width: 100%;
+    /* Botón ancho completo en celular */
+    margin-top: 15px;
+  }
+}
+
+.offer-item {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+  /* Línea divisoria sutil */
+  padding: 15px 0;
+  align-items: flex-start;
+}
+
+
+.offer-item:last-child {
+  border-bottom: none;
+}
+
+/* Imagen del producto */
+.offer-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  /* Evita que la imagen se aplaste */
+}
+
+/* Contenedor de la info (derecha) */
+.offer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.offer-info-top h4 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.offer-info-top .desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+/* --- ZONA DE PRECIOS --- */
+.pricing-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  /* Por si el precio es muy largo en celular */
+}
+
+.current-price {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  /* Tachado */
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.discount-badge {
+  color: #ff4500;
+  /* Naranja rojizo tipo Didi */
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #fff0e6;
+  /* Fondo naranja muy clarito */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* --- BOTÓN AGREGAR (ESTILO PASTILLA) --- */
+.btn-add {
+  align-self: flex-start;
+  /* Alineado a la izquierda */
+  background-color: white;
+  color: #ff7d00;
+  /* Color Naranja Didi (o usa tu azul #0275d8) */
+  border: 1px solid #ff7d00;
+  /* Borde del mismo color */
+  padding: 5px 20px;
+  border-radius: 20px;
+  /* Bordes muy redondos */
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: auto;
+  /* IMPORTANTE: Para que no ocupe todo el ancho */
+}
+
+.btn-add:hover {
+  background-color: #fff5eb;
+  /* Color suave al pasar el mouse */
+  transform: scale(1.02);
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.reviews-header h3 {
+  margin: 0;
+  /* Quitamos margen para que se alinee bien */
+}
+
+/* Botón "Escribir opinión" (Borde azul simple) */
+.btn-write-review {
+  background-color: transparent;
+  color: #0275d8;
+  border: 1px solid #0275d8;
+  padding: 5px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-write-review:hover {
+  background-color: #0275d8;
+  color: white;
+}
+
+/* Estilo para las estrellitas en los comentarios */
+.stars {
+  color: #ffc107;
+  /* Amarillo dorado */
+  margin-left: 5px;
+}
+
+.review-text {
+  margin-top: 5px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* --- ESTILOS DEL MODAL (VENTANA EMERGENTE) --- */
+.modal-overlay {
+  position: fixed;
+  /* Se queda fijo en la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Para que quede encima de todo */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Botón de cerrar (X) */
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-modal:hover {
+  color: #333;
+}
+
+/* Inputs del modal */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Animación suave de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+>>>>>>> 3b56726c7d9929f775e12fdc562d663de4ac3282
 }
