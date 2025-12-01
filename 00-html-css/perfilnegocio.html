@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>TuRinconLocal - PerfilDelNegocio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Listado de negocios locales
+  para encontrar lo mejor de tu localidad.">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-building-store">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 21l18 0" />
+        <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+        <path d="M5 21l0 -10.15" />
+        <path d="M19 21l0 -10.15" />
+        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+      </svg>
+      Local Hub
+    </h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="Categorias.html">Categorias</a>
+      <a href="#">Ofertas</a>
+    </nav>
+    <div class="iconos-header">
+      <button class="favoritos" aria-label="Marcar como favorito"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+        </svg>
+      </button>
+
+      <button class="Carrito" aria-label="Carrito de compras"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+          <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+          <path d="M17 17h-11v-14h-2" />
+          <path d="M6 5l14 1l-1 7h-13" />
+        </svg>
+        <span id="contador-carrito" class="contador">0</span>
+      </button>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="profile-hero card">
+
+        <div class="hero-banner">
+          <img src="backgroundnegocio.png" alt="Banner Café Aroma">
+        </div>
+
+        <div class="hero-info">
+          <div class="avatar-wrapper">
+            <img src="Trarroria.png" alt="Logo" class="profile-avatar">
+          </div>
+
+          <div class="business-details">
+            <div>
+              <h2>Comida italiana</h2>
+              <p class="subtitle">La mejor comida italiana que puedes encontrar
+                tenemos todo tipo de variedad
+              </p>
+              <div class="badges">
+                <span>4.8 ★★★★★</span>
+                <span>Verificado</span>
+                <span>Calle Principal 12</span>
+              </div>
+            </div>
+            <button class="btn-follow">Seguir</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="profile-grid-layout">
+
+        <div class="left-column">
+
+          <section class="card about-section">
+            <h3>Acerca de Nosotros</h3>
+            <p>Bienvenidos a Café Aroma, un refugio para los amantes del café...</p>
+          </section>
+
+          <section class="card offers-section">
+            <h3>Ofertas Especiales</h3>
+
+            <article class="offer-item">
+              <img src="foto-oferta.jpg" alt="Boneless">
+
+              <div class="offer-details">
+                <div class="offer-info-top">
+                  <h4>Boneless 250 Gramos</h4>
+                  <p class="desc">Trocitos de pechuga de pollo bañados en salsa a elección.</p>
+                </div>
+
+                <div class="pricing-row">
+                  <span class="current-price">MX$99.50</span>
+                  <span class="old-price">MX$199.00</span>
+                  <span class="discount-badge">50% OFF</span>
+                </div>
+
+                <button class="btn-add">Agregar</button>
+              </div>
+            </article>
+
+            <article class="offer-item">
+              <img src="galeria1.jpg" alt="Alitas">
+
+              <div class="offer-details">
+                <div class="offer-info-top">
+                  <h4>20 Alitas</h4>
+                  <p class="desc">Alitas crujientes con aderezo ranch.</p>
+                </div>
+
+                <div class="pricing-row">
+                  <span class="current-price">MX$189.50</span>
+                </div>
+
+                <button class="btn-add">Agregar</button>
+              </div>
+            </article>
+
+          </section>
+
+          <section class="card gallery-section">
+            <h3>Galería de Productos y Servicios</h3>
+
+            <article class="offer-item">
+              <img src="galeria1.jpg" alt="Café Latte">
+
+              <div class="offer-details">
+                <div class="offer-info-top">
+                  <h4>Café Latte Artesanal</h4>
+                  <p class="desc">Nuestro clásico latte con arte en espuma, hecho con granos selectos.</p>
+                </div>
+
+                <div class="pricing-row">
+                  <span class="current-price">MX$65.00</span>
+                </div>
+
+                <button class="btn-add">Agregar</button>
+              </div>
+            </article>
+
+            <article class="offer-item">
+              <img src="galeria2.jpg" alt="Pastel de Zanahoria">
+
+              <div class="offer-details">
+                <div class="offer-info-top">
+                  <h4>Rebanada de Pastel de Zanahoria</h4>
+                  <p class="desc">Pastel casero con betún de queso crema y nueces.</p>
+                </div>
+
+                <div class="pricing-row">
+                  <span class="current-price">MX$80.00</span>
+                </div>
+
+                <button class="btn-add">Agregar</button>
+              </div>
+            </article>
+
+            <article class="offer-item">
+              <img src="galeria3.jpg" alt="Frappé Mocha">
+
+              <div class="offer-details">
+                <div class="offer-info-top">
+                  <h4>Frappé Mocha</h4>
+                  <p class="desc">Bebida fría mezclada con hielo, café, chocolate y crema batida.</p>
+                </div>
+
+                <div class="pricing-row">
+                  <span class="current-price">MX$95.00</span>
+                  <span class="old-price">MX$110.00</span>
+                  <span class="discount-badge">Promo</span>
+                </div>
+
+                <button class="btn-add">Agregar</button>
+              </div>
+            </article>
+
+          </section>
+
+          <section class="card reviews-section">
+            <div class="reviews-header">
+              <h3>Reseñas y Valoraciones</h3>
+              <button class="btn-write-review" onclick="toggleModal('reviewModal')">Escribir opinión</button>
+            </div>
+
+            <div class="review-list">
+              <div class="review">
+                <p><strong>Ana Pérez</strong> <span class="stars">★★★★★</span></p>
+                <p class="review-text">El mejor café de la zona, me encanta el ambiente.</p>
+              </div>
+            </div>
+          </section>
+
+          <div id="reviewModal" class="modal-overlay" style="display: none;">
+            <div class="modal-content">
+              <span class="close-modal" onclick="toggleModal('reviewModal')">&times;</span>
+              <h3>Cuéntanos tu experiencia</h3>
+
+              <form class="review-form">
+                <label>Tu puntuación</label>
+                <select class="input-field">
+                  <option value="5">★★★★★ (Excelente)</option>
+                  <option value="4">★★★★☆ (Muy bueno)</option>
+                  <option value="3">★★★☆☆ (Regular)</option>
+                  <option value="2">★★☆☆☆ (Malo)</option>
+                  <option value="1">★☆☆☆☆ (Pésimo)</option>
+                </select>
+
+                <label>Tu opinión</label>
+                <textarea class="input-field" rows="4" placeholder="¿Qué te pareció el servicio?"></textarea>
+
+                <button type="submit" class="btn-primary">Publicar Reseña</button>
+              </form>
+            </div>
+          </div>>
+
+        </div>
+        <aside class="right-column">
+
+          <section class="card location-section">
+            <h3>Ubicación y Contacto</h3>
+            <div class="map-placeholder">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.088776066701!2d-99.23804721284185!3d19.454609899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20312b10133e7%3A0x68d2788806cb45f9!2zR2lub-KAmXM!5e0!3m2!1ses-419!2smx!4v1763866921763!5m2!1ses-419!2smx"
+                width="470" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p>Calle Principal 123, 41004 Sevilla</p>
+            <p>Telefono: +52 5523423423</p>
+            <p>Correo: comidaitaliana@gmail.com</p>
+
+          </section>
+
+
+          </section>
+
+        </aside>
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
