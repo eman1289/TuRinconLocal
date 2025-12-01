@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "La Trattoria del Nonno",
+    "modalidad": "italiana",
+    "ubicacion": "centro",
+    "calificacion": 4.5,
+    "imagen": "./Trarroria.png",
+    "descripcion": "Comida Italiana | en el centro de la ciudad",
+    "enlace": "./perfilnegocio.html"
+  },
+  {
+    "id": 2,
+    "nombre": "Sushi Fusión",
+    "modalidad": "japonesa",
+    "ubicacion": "norte",
+    "calificacion": 4.8,
+    "imagen": "./sushi fusion.png",
+    "descripcion": "Comida Japonesa | en el norte de la ciudad",
+    "enlace": "#"
+  },
+  {
+    "id": 3,
+    "nombre": "Tacos el campeon",
+    "modalidad": "tacos",
+    "ubicacion": "sur",
+    "calificacion": 4.2,
+    "imagen": "./tacos el campeon.png",
+    "descripcion": "Comida Mexicana | en el sur de la ciudad",
+    "enlace": "#"
+  },
+  {
+    "id": 4,
+    "nombre": "Café Aromas",
+    "modalidad": "cafeteria",
+    "ubicacion": "centro",
+    "calificacion": 4.0,
+    "imagen": "./cafe aromas.png",
+    "descripcion": "Cafeteria de especialidad",
+    "enlace": "#"
+  },
+  {
+    "id": 5,
+    "nombre": "Sabores de la india",
+    "modalidad": "comida-india",
+    "ubicacion": "sur",
+    "calificacion": 4.3,
+    "imagen": "./sabores de la india.png",
+    "descripcion": "Comida Hindú tradicional",
+    "enlace": "#"
+  },
+  {
+    "id": 6,
+    "nombre": "Parrilla don josé",
+    "modalidad": "parrilla",
+    "ubicacion": "norte",
+    "calificacion": 5.0,
+    "imagen": "./parrilla don jose.png",
+    "descripcion": "La mejor carne asada",
+    "enlace": "#"
+  }
+]

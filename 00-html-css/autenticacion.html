@@ -8,6 +8,8 @@
     ,ofertas exclusivas y servicios unicos cerca de ti.">
 
   <link rel="stylesheet" href="./styles.css" />
+
+  <script type="module" src="../01-javascript/script.js"></script>
 </head>
 
 <body>
@@ -38,29 +40,37 @@
 
   <main>
     <section class="pagina-registro">
-      <h2>Crea tu cuenta de negocio</h2>
+      <h2>Crea tu cuenta</h2>
       <p>Únete a nuestra comunidad de negocios locales</p>
 
+      <div class="tabs-container">
+        <button type="button" class="tab-btn active" onclick="cambiarModo('usuario')">Comprador</button>
+        <button type="button" class="tab-btn" onclick="cambiarModo('negocio')">Negocio</button>
+      </div>
       <form>
-        <div class="form-group">
-          <label for="nombre-negocio">Nombre del negocio</label>
-          <input type="text" id="nombre-negocio" name="nombre-negocio" placeholder="Introduce el nombre de tu negocio"
-            required>
+        <input type="hidden" id="tipoUsuario" name="role" value="usuario">
+
+        <div id="campos-negocio" style="display: none;">
+          <div class="form-group">
+            <label for="nombre-negocio">Nombre del negocio</label>
+            <input type="text" id="nombre-negocio" name="nombre-negocio"
+              placeholder="Introduce el nombre de tu negocio">
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-negocio">Tipo de negocio</label>
+            <select id="tipo-negocio" name="tipo-negocio">
+              <option value="">Selecciona una categoría</option>
+              <option value="Restaurante">Restaurante</option>
+              <option value="Puesto de comida">Puesto de comida</option>
+              <option value="Papelería">Papelería</option>
+            </select>
+          </div>
         </div>
 
         <div class="form-group">
           <label for="email">Correo electrónico</label>
           <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-        </div>
-
-        <div class="form-group">
-          <label for="tipo-negocio">Tipo de negocio</label>
-          <select id="tipo-negocio" name="tipo-negocio" required>
-            <option value="">Selecciona una categoría</option>
-            <option value="Restaurante">Restaurante</option>
-            <option value="Puesto de comida">Puesto de comida</option>
-            <option value="Papelería">Papelería</option>
-          </select>
         </div>
 
         <div class="form-group">
@@ -76,9 +86,11 @@
         </div>
 
         <div class="form-group checkbox">
-          <label for="terminos" class="checkbox-label>
-            <input type=" checkbox" name="terminos" required>
-            Acepto los <a href="#">Términos y Condiciones</a> y la <a href="#">Política de Privacidad</a>
+          <label for="terminos" class="checkbox-label">
+            <input type="checkbox" name="terminos" required>
+            <span>
+              Acepto los <a href="#">Términos y Condiciones</a> y la <a href="#">Política de Privacidad</a>
+            </span>
           </label>
         </div>
 
@@ -90,7 +102,49 @@
       <p class="enlace-inferior">¿Ya tienes una cuenta? <a href="./iniciar-sesión.html">Inicia sesión</a></p>
     </section>
   </main>
+  <script>
+    function cambiarModo(modo) {
 
+      const cajaNegocio = document.getElementById('campos-negocio');
+      const inputOculto = document.getElementById('tipoUsuario');
+      const inputNombre = document.getElementById('nombre-negocio');
+      const inputTipo = document.getElementById('tipo-negocio');
+      const botones = document.querySelectorAll('.tab-btn');
+
+
+      if (!cajaNegocio || !botones.length) return;
+
+      if (modo === 'negocio') {
+
+        cajaNegocio.style.display = 'block';
+        inputOculto.value = 'negocio';
+        inputNombre.required = true;
+        inputTipo.required = true;
+
+        botones[0].classList.remove('active');
+        botones[1].classList.add('active');
+
+      } else {
+
+        cajaNegocio.style.display = 'none';
+        inputOculto.value = 'usuario';
+        inputNombre.required = false;
+        inputTipo.required = false;
+
+
+        inputNombre.value = "";
+        inputTipo.value = "";
+
+        botones[0].classList.add('active');
+        botones[1].classList.remove('active');
+      }
+    }
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      cambiarModo('usuario');
+    });
+  </script>
 
 
 

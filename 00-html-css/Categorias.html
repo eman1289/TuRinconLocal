@@ -45,14 +45,14 @@
 
     <section class="buscador-filtros">
       <form class="filtros-form">
-        <input type="text" placeholder="Buscar por nombre o palabra clave">
-        <select>
+        <input type="text" placeholder="Buscar por nombre o palabra clave" id="filter-name">
+        <select name="Ubicación" id="filter-location">
           <option value="">Ubicación</option>
           <option value="centro">Centro</option>
           <option value="norte">Norte</option>
           <option value="sur">Sur</option>
         </select>
-        <input type="number" min="1" max="5" placeholder="Calificación mínima">
+        <input type="number" min="1" max="5" placeholder="Calificación mínima" id="filter-calif">
         <div class="botones-filtro">
           <button type="submit">Aplicar Filtros</button>
           <button type="reset">Limpiar Filtros</button>
@@ -70,7 +70,7 @@
           ★★★★☆ <span class="rating-num">4.5</span>
         </span>
 
-        <a href="#" class="perfil">Ver Perfil</a>
+        <a href="./perfilnegocio.html" class="perfil">Ver Perfil</a>
       </div>
 
       <div class="tarjeta-negocio">
