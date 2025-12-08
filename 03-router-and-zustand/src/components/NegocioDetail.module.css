@@ -1,0 +1,40 @@
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.image {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.4rem;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+}

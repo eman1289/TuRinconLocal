@@ -1,0 +1,79 @@
+.buscador-filtros {
+  margin-bottom: 2rem;
+}
+
+/* título centrado dentro del módulo */
+.buscador-filtros h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* formulario */
+.filtros-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+/* inputs y select dentro del formulario */
+.filtros-form input,
+.filtros-form select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex: 1 1 200px;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+/* Si quieres placeholders con el mismo color */
+.filtros-form input::placeholder {
+  color: var(--text-muted);
+}
+
+/* contenedor de botones */
+.botones-filtro {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* estilo específico para los botones dentro del módulo */
+.botones-filtro button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* hover */
+.botones-filtro button:hover {
+  background-color: none;
+  transform: translateY(-1px);
+}
+
+
+/* para que el formulario tenga buena responsividad */
+@media (max-width: 720px) {
+  .filtros-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .botones-filtro {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .botones-filtro button {
+    width: 100%;
+  }
+}

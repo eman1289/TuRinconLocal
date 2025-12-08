@@ -1,0 +1,31 @@
+.paginacion {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagina {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.pagina:hover {
+  background-color: #09f;
+  color: white;
+}
+
+.pagina:active {
+  transform: scale(0.90);
+}
+
+.isActive {
+  background-color: #09f;
+  color: white;
+  font-weight: bold;
+  pointer-events: none;
+}

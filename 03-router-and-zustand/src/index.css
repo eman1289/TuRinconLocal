@@ -490,6 +490,9 @@ main>section:nth-child(4) article svg {
 .botones-filtro {
   display: flex;
   gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .botones-filtro button {
@@ -502,9 +505,12 @@ main>section:nth-child(4) article svg {
 }
 
 .tarjetas-grid {
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 por fila */
   gap: 2rem;
+
 }
 
 .tarjeta-negocio {
@@ -513,6 +519,21 @@ main>section:nth-child(4) article svg {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 380px;
+}
+
+tarjeta-negocio p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .tarjeta-negocio img {
@@ -520,6 +541,7 @@ main>section:nth-child(4) article svg {
   height: 180px;
   object-fit: cover;
   border-radius: 0.5rem;
+  background-color: #eee;
 }
 
 .tarjeta-negocio .rating {
@@ -537,10 +559,9 @@ main>section:nth-child(4) article svg {
 
 .tarjeta-negocio a {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: auto;
   padding: 0.5rem 1rem;
   background-color: var(--primary);
-  /* Usa tu color principal */
   color: white;
   text-decoration: none;
   border-radius: 0.5rem;
