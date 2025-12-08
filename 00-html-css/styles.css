@@ -656,6 +656,8 @@ main>section:nth-child(4) article svg {
   font-size: 0.9rem;
   color: #666;
   margin-top: 0.5rem;
+<<<<<<< HEAD
+=======
 }
 
 /*pagina register */
@@ -1404,4 +1406,5 @@ h3 {
     opacity: 1;
     transform: translateY(0);
   }
+>>>>>>> 3b56726c7d9929f775e12fdc562d663de4ac3282
 }
